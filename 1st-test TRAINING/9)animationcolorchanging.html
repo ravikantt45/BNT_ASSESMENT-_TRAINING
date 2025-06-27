@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changing Circle</title>
+    <style>
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            animation: changeColor 8s infinite;
+        }
+
+        @keyframes changeColor {
+            0% { background-color: red; }
+            25% { background-color: yellow; }
+            50% { background-color: blue; }
+            75% { background-color: green; }
+            100% { background-color: red; }
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>

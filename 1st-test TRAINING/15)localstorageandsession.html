@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local & Session Storage</title>
+    <script>
+        function saveData() {
+            const name = document.getElementById('name').value;
+            const color = document.getElementById('color').value;
+            
+            // (Store in Local Storage)
+            localStorage.setItem('userName', name);
+            localStorage.setItem('favColor', color);
+            
+            // (Store in Session Storage)
+            sessionStorage.setItem('sessionName', name);
+            sessionStorage.setItem('sessionColor', color);
+            
+            console.log("Local Storage:", localStorage.getItem('userName'), localStorage.getItem('favColor'));
+            console.log("Session Storage:", sessionStorage.getItem('sessionName'), sessionStorage.getItem('sessionColor'));
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Local & Session Storage Example</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name">
+    <br>
+    <label for="color">Favorite Color:</label>
+    <input type="text" id="color">
+    <br>
+    <button onclick="saveData()">Save Data</button>
+
+</body>
+</html> 

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Navigation Bar</title>
+ 
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  padding: 40px 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.brand-name {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 8px 10px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #005599;
+  border-radius: 4px;
+}
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="brand">
+     
+      <span class="brand-name">Ravikant tiwari</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+</body>
+</html>

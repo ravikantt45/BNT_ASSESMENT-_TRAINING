@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Headings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            height: 400px;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        .heading {
+            position: sticky;
+            top: 0;
+            background: white;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="section">
+        <div class="heading">Section 1</div>
+        <p>Content for section 1...</p>
+    </div>
+
+    <div class="section">
+        <div class="heading">Section 2</div>
+        <p>Content for section 2...</p>
+    </div>
+
+    <div class="section">
+        <div class="heading">Section 3</div>
+        <p>Content for section 3...</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flex Layout Demo</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  padding-top: 70px; 
+  background-color: skyblue;
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  z-index: 1000;
+}
+
+
+.navbar {
+  position: sticky;
+  top: 70px;
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  z-index: 999;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #666;
+  border-radius: 5px;
+}
+
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 20px;
+}
+
+
+.sidebar {
+  position: relative;
+  background-color: #ddd;
+  padding: 20px;
+  width: 25%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+
+.content {
+  width: 75%;
+}
+
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 calc(45% - 20px);
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  min-height: 100px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Absolute Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+
+  </style>
+  
+</head>
+<body>
+
+  <header class="header">
+    <h1>START  EATING HEALTHY TODAY</h1>
+  </header>
+
+  <nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+
+  <div class="main-container">
+    
+  
+    <aside class="sidebar">
+      <h3>Sidebar</h3>
+      <p>This sidebar is relative.</p>
+    </aside>
+
+  
+    <main class="content">
+      <section class="card-container">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
+      </section>
+    </main>
+
+  </div>
+
+
+  <footer class="footer">
+    <p>© 2025 My Website</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food Form</title>
+</head>
+<body>
+
+  <h2>Favorite Food Survey</h2>
+  <form action="#" method="post">
+
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name" required><br /><br />
+
+    <label for="age">Age:</label><br />
+    <input type="number" id="age" name="age" required><br /><br />
+
+    <label>Gender:</label><br />
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label><br />
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br /><br />
+
+    <label for="food">Favorite Food:</label><br />
+    <select id="food" name="food">
+      <option value="Pizza">Pizza</option>
+      <option value="Chinese">Chinese</option>
+      <option value="Indian">Indian</option>
+      <option value="Other">Other</option>
+    </select><br /><br />
+
+    <input type="checkbox" id="cook" name="cook">
+    <label for="cook">Do you like to cook?</label><br /><br />
+
+    <label for="comments">Additional Comments:</label><br />
+    <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br /><br />
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
