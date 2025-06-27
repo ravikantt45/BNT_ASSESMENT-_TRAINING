@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Units Demo</title>
+  <style>
+    html {
+      font-size: 16px; 
+    }
+
+    .px-box {
+      font-size: 16px;
+      width: 200px;
+      background: lightblue;
+    }
+
+    .em-box {
+      font-size: 2em; 
+      width: 10em;    
+      background: lightgreen;
+    }
+
+    .rem-box {
+      font-size: 1.5rem; 
+      width: 15rem;      
+      background: lightsalmon;
+    }
+
+    .percent-box {
+      width: 50%;       
+      background: plum;
+    }
+
+    .container {
+      width: 400px;
+      padding: 10px;
+      border: 2px solid black;
+    }
+
+    .label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="label">Pixel (px)</div>
+    <div class="px-box">Width: 200px</div>
+
+    <div class="label">EM</div>
+    <div class="em-box">2em font, 10em width</div>
+
+    <div class="label">REM</div>
+    <div class="rem-box">1.5rem font, 15rem width</div>
+
+    <div class="label">Percent (%)</div>
+    <div class="percent-box">Width: 50%</div>
+  </div>
+
+</body>
+</html>
