@@ -1,22 +1,14 @@
-function chain(value) {
-  let current = value;
+// take var example
+console.log("Using var:");
+console.log(a); 
+var a = 10;
 
-  const operations = {
-    add(val) {
-      current += val;
-      return operations;
-    },
-    subtract(val) {
-      current -= val;
-      return operations;
-    },
-    result() {
-      return current;
-    }
-  };
-
-  return operations;
+// take let example
+console.log("Using let:");
+try {
+  console.log(b); 
+} catch (err) {
+  console.log("Error:", err.message);
 }
 
-
-console.log(chain(5).add(2).subtract(1).result()); 
+let b = 20;
