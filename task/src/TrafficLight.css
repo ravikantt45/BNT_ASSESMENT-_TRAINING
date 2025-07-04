@@ -1,0 +1,35 @@
+.traffic-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.traffic-light {
+  width: 100px;
+  background: #333;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 20px auto;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 10px auto;
+  opacity: 0.3;
+}
+
+.circle.red {
+  background-color: red;
+}
+.circle.yellow {
+  background-color: yellow;
+}
+.circle.green {
+  background-color: green;
+}
+
+.circle.active {
+  opacity: 1;
+  box-shadow: 0 0 20px white;
+}
